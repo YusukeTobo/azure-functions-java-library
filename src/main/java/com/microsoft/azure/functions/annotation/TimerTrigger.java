@@ -90,4 +90,7 @@ public @interface TimerTrigger {
      * @return A string representing a CRON expression that will be used to schedule a function to run.
      */
     String schedule();
+
+    boolean useMonitor() default true;
+    boolean runOnStartup() default false;
 }
